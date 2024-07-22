@@ -4,6 +4,7 @@ import RegisterPage from './Component/SignUp';
 import 'bootstrap/dist/css/bootstrap.css';
 import LandingPage from './Component/Landing';
 import Footer from './Component/Footer';
+import Compiler from './Component/Compile';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
+          <Route path="/compiler" element={<Compiler />} />
         </Routes>
       </BrowserRouter>
       <Footer />
@@ -31,7 +33,7 @@ const App = () => {
           <div className="col-lg-4 d-flex justify-content-end mt-3 mb-3">
             <button className="btn btn-outline-dark btn-lg me-4 p-1" onClick={() => navigate("/")}>Home</button>
             <button className="btn btn-outline-dark btn-lg me-4 p-1" onClick={() => navigate("/Login")}>Login</button>
-            <button className="btn btn-outline-dark btn-lg me-4 p-1" onClick={() => navigate("/Register")}>Register</button>
+            <button className="btn btn-outline-dark btn-lg me-4 p-1" onClick={() => navigate("/Compiler")}>Compiler</button>
           </div>
         </div>
       </div>

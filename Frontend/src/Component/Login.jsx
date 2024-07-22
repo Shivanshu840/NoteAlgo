@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { FaLock, FaUserSecret, FaUserCircle } from "react-icons/fa";
 import { BiSolidUserCircle } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
     return (
@@ -30,6 +31,7 @@ export default function LoginPage() {
                             </label>
                         </div>
                         <button className="btn btn-outline-primary mt-4 w-100">Login</button>
+                        <p class="text fw-bold m-1" style={{textAlign: 'center'}}>don't have an account? <Link to="/Register">sign</Link></p>
                     </form>
                 </div>
             </div>
